@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Look Trading</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .map {
+      flex: 1;
+    }
+
+    .info {
+      flex: 1;
+      background-color: #e6f0ff; /* light blue */
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .info h1 {
+      color: #0055cc;
+      margin-bottom: 20px;
+    }
+
+    .info p {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+
+    .info a.button {
+      margin-top: 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #0055cc;
+      padding: 12px 20px;
+      border-radius: 6px;
+      display: inline-block;
+      width: fit-content;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .map, .info {
+        flex: unset;
+        height: 50vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="map">
+      <iframe
+        width="100%"
+        height="100%"
+        frameborder="0"
+        style="border:0"
+        src="https://www.google.com/maps?q=25.42817129155243,55.52458573379017&z=15&output=embed"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="info">
+      <h1>Happy Look Trading</h1>
+      <p><strong>Location:</strong> China Mall, Ajman</p>
+      <p><strong>Phone:</strong> 0565542660</p>
+      <p><strong>Email:</strong> rahul.aswal@happylooktrading.com</p>
+      <p><strong>Hours:</strong> 9:00 AM – 6:00 PM (WhatsApp or email anytime)</p>
+      <a class="button" href="https://wa.me/971565542660" target="_blank">Chat on WhatsApp</a>
+    </div>
+  </div>
+</body>
+</html>
